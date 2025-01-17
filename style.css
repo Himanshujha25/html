@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black; /* Just for contrast */
+}
+
+.container {
+    height: 200px;
+    width: 200px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Animation */
+    animation: colorChange 6s infinite alternate;
+}
+
+/* Keyframes for color animation */
+@keyframes colorChange {
+    0% { background: red; }
+    20% { background: orange; }
+    40% { background: yellow; }
+    60% { background: green; }
+    80% { background: blue; }
+    100% { background: purple; }
+}
